@@ -22,6 +22,7 @@ import java.util.Date;
 @Builder
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 @Entity(name = "tb_pedido")
+@ToString
 public class Pedido {
 
     @Id
