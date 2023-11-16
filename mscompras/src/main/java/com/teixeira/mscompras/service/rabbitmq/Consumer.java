@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Consumer {
 
     @RabbitListener(queues = {"${queue.name}"})
-    public void consumer(@Payload String pedido) {
+    public void consumer(@Payload Pedido pedido) {
         System.out.println("Mensagem recebida: " + pedido.toString());
     }
 }
